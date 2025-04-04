@@ -11,9 +11,19 @@ body {
   margin: 0;
   box-sizing: border-box;
   min-height: 100vh;
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: 
+  'header, header'
+  'nav, img'
+  'img, img'
+  'footer, footer '
+  ;
 }
 
-.header {
+.header { 
+  grid-area: header;
   background-color: var(--primary);
   color: var(--white);
   display: grid;
@@ -28,6 +38,7 @@ body {
 }
 
 .nav__container {
+  grid-area: nav;
   box-shadow: var(--gray) 4px 4px 10px 2px;
   display: grid;
   row-gap: 24px;
@@ -58,6 +69,7 @@ body {
 }
 
 .img_card {
+  grid-area: img;
   width: 300px;
   box-shadow: var(--gray) 4px 4px 10px 2px;
   border-radius: 3px;
@@ -73,6 +85,7 @@ body {
 }
 
 .footer {
+  grid-area: footer;
   display: grid;
   align-items: center;
   justify-items: center;
