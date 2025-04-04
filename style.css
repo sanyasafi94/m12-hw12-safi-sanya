@@ -6,31 +6,29 @@
 }
 
 body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 1fr 30px;
+  grid-template-areas: 
+  "header header header header"
+  "nav img img img"
+  "footer footer footer footer";
   font-family: 'Indie Flower', cursive;
   font-size: 1.2rem;
   margin: 0;
   box-sizing: border-box;
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 200px 200px 200px 200px ;
-  grid-template-areas: 
-  'header, header'
-  'nav, img'
-  'img, img'
-  'footer, footer '
-  ;
+  
 }
 
 .header { 
   grid-area: header;
+  display: grid;
   background-color: var(--primary);
   color: var(--white);
-  display: grid;
   align-items: center;
   justify-items: center;
-  padding: 20px;
-  
+  max-height: 100px;
 }
 
 .header__title {
