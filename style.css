@@ -12,8 +12,8 @@ body {
   box-sizing: border-box;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 200px 200px;
-  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 300px 200px 200px 200px ;
   grid-template-areas: 
   'header, header'
   'nav, img'
@@ -29,6 +29,8 @@ body {
   display: grid;
   align-items: center;
   justify-items: center;
+  padding: 20px;
+  
 }
 
 .header__title {
