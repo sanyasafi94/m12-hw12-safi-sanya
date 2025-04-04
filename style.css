@@ -11,6 +11,9 @@ body {
   margin: 0;
   box-sizing: border-box;
   min-height: 100vh;
+  display: grid;
+  grid-template-columns: 120px 120px 120px;
+  grid-template-rows: repeat(3 100px);
 }
 
 .header {
