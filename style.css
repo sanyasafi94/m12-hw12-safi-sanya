@@ -68,9 +68,13 @@
   }
   
   .img_card {
+  grid-area: img;
   width: 300px;
   box-shadow: var(--gray) 4px 4px 10px 2px;
   border-radius: 3px;
+  display: grid;
+  grid-column: 3,  ;
+  grid-row: third-line / 2;
   }
   
   .img_card__img {
