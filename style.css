@@ -12,15 +12,17 @@
   box-sizing: border-box;
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 120px 120px 120px;
-  grid-template-rows: repeat(3 1100px);
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: 100px 100px 100px;
   grid-template-areas:
-  'header, nav, .'
-  'img, img, img'
-  'footer, footer, footer';
+  'header, nav,'
+  'img, img'
+  'img, img'
+  'footer, footer';
   }
   
   .header {
+  grid-area: header;
   background-color: var(--primary);
   color: var(--white);
   display: grid;
@@ -81,6 +83,7 @@
   }
   
   .footer {
+  grid-area: footer;
   display: grid;
   align-items: center;
   justify-items: center;
